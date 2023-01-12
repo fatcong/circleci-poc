@@ -14,6 +14,9 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
+       - run:
+          name: "echo hostname"
+          command: "hostname"     
       - run:
           name: "Say hello"
           command: "ssh -i /home/circleci/circleci-runner-key.pem -t ec2-user@172.30.8.110 '/home/ec2-user/target-poc-110.sh'"
