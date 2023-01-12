@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "ssh -i /home/circleci/circleci-runner-key.pem -t ec2-user@172.30.8.34 '/home/ec2-user/target-poc.sh'"
+          command: "ssh -i /home/circleci/circleci-runner-key.pem -t ec2-user@172.30.8.110 '/home/ec2-user/target-poc-110.sh'"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
